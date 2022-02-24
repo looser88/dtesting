@@ -19,7 +19,7 @@ bot = Client('droplink bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm a specialised bot for shortening Droplink.co links which can help you earn money by just sharing links. I am made by @ToonsHub2006.")
+        "I'm a specialised bot for shortening ****** links which can help you earn money by just sharing links.")
 
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
@@ -33,7 +33,7 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link):
-    url = 'https://droplink.co/api'
+    url = 'https://tnlink.in/api'
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
