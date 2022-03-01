@@ -20,11 +20,14 @@
             "description": "Get this value from https://my.telegram.org",
             "value": ""
         },
-        "API_KEY": {
+        "API_KEY1": {
             "description": "Get API key from https://tnlink.in/member/tools/api",
             "required": false
-        }
-    },
+                     }
+        "API_KEY2": {
+            "description": "Get API key from https://tnlink.in/member/tools/api",
+            "required": false
+                     },
     "addons": [],
     "buildpacks": [
         {
