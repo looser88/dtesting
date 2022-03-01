@@ -12,4 +12,5 @@ Make short link by using [Droplink](https://droplink.co/ref/DAKSHYADAV) API key
 
 * `API_ID`: Get this value from [my.telegram.org](https://my.telegram.org/apps)
 * `API_HASH`: Get this value from [my.telegram.org](https://my.telegram.org/apps)
-* `API_KEY`: Create [Droplink](https://droplink.co/ref/DAKSHYADAV) account then get this value from [Droplink API](https://droplink.co/ref/DAKSHYADAV)
+* `API_KEY1`: Create [Droplink](https://droplink.co/ref/DAKSHYADAV) account then get this value from [Droplink API](https://droplink.co/ref/DAKSHYADAV)
+* `API_KEY2`: Create [Droplink]
