@@ -26,7 +26,7 @@ async def start(bot, message):
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
 async def link_handler(bot, message):
-    link = message.matches[0].group(0)
+    link1 = message.matches[0].group(0)
     try:
         short_link = await get_shortlink2(link2)
         await message.reply(f'Here is your [`{short_link}`]({short_link})', quote=True)
