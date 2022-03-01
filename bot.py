@@ -26,17 +26,22 @@ async def start(bot, message):
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
 async def link_handler(bot, message):
-    link = message.matches[0].group(0)
+    link1 = message.matches[0].group(0)
     try:
-        short_link = await get_shortlink(link)
+        short_link = await get_shortlink2(link2)
         await message.reply(f'Here is your [`{short_link}`]({short_link})', quote=True)
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
 
-async def get_shortlink(link):
+async def get_shortlink1(link1):
     url = 'https://tnlink.in/api'
-    params = {'api': API_KEY1,API_KEY2, 'url': link}
+    params = {'api': API_KEY1, 'url': link1}
+    
+    
+async def get_shortlink2(link2):
+    url = 'https://tnlink.in/api'
+    params = {'api': API_KEY2, 'url': link2}
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True) as response:
